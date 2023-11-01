@@ -1,0 +1,4 @@
+rest-apis-flask-python/
+.*.sw?
+.venv
+__pycache__
