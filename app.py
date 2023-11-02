@@ -9,8 +9,8 @@ def index():
         'endpoints': [
             {'endpoint': '/echo', 'description': 'Echoes POSTed JSON back to the sender'}
         ]
-    }
+    }, 200
 
 @app.post('/echo')
 def echo():
-    return request.get_json()
+    return request.get_json(), 200
