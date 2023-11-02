@@ -10,3 +10,7 @@ def index():
             {'endpoint': '/echo', 'description': 'Echoes POSTed JSON back to the sender'}
         ]
     }
+
+@app.post('/echo')
+def echo():
+    return request.get_json()
